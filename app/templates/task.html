@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %} Task {% endblock %} {% block content
+%}
+<div class="d-flex flex-row h-100 justify-content-center">
+  <form
+    class="d-flex flex-column p-5 align-items-center justify-content-center col-12 col-lg-5 col-md-6 col-sm-12"
+    action="/scrape"
+    method="post"
+  >
+    <h3 class="w-100 mb-4">
+      Enter the url to retrieve information from the website.
+    </h3>
+    <div class="input-group mb-3 mx-auto rounded w-100">
+      <input
+        type="text"
+        class="form-control rounded form-control-lg"
+        placeholder="URL"
+        aria-label="Email"
+        aria-describedby="basic-addon1"
+        name="url"
+        required
+      />
+    </div>
+    <button class="btn btn-lg btn-cta rounded w-100" style="font-weight: bold;" type="submit">
+      START
+    </button>
+  </form>
+</div>
+
+{% endblock %}

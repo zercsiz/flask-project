@@ -1,0 +1,132 @@
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+.btn-cta {
+  background-color: #d96121;
+  color: white;
+  border-color: #d96121;
+}
+
+.btn-cta:hover {
+  background-color: transparent;
+  color: #d96121;
+  border-color: #d96121;
+}
+
+.navbar-border-group {
+  border: 1px solid gray;
+  box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rounded {
+  border-radius: 10rem !important;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 12px solid rgb(255, 255, 255);
+  width: 0;
+  animation: typing 1.8s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(10px); /* Start slightly lower */
+  animation: fadeInUp 2s ease-out 1.8s forwards;
+  animation-delay: 2.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to the normal position */
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 1.8s; /* delay before it starts */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.card {
+  background-color: rgb(52, 58, 66);
+  box-shadow: 0px 11px 20px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(188, 188, 188);
+}
+.card-header {
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.hidden-detail {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover .hidden-detail {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fade-in-up-0 {
+  opacity: 0;
+  transform: translateY(10px); /* Start slightly lower */
+  animation: fadeInUp 2s ease-out forwards;
+  animation-delay: 0;
+}
+.fade-in-up-1 {
+  opacity: 0;
+  transform: translateY(10px); /* Start slightly lower */
+  animation: fadeInUp 2s ease-out 1.8s forwards;
+  animation-delay: 0.5s;
+}
+.fade-in-up-2 {
+  opacity: 0;
+  transform: translateY(10px); /* Start slightly lower */
+  animation: fadeInUp 2s ease-out 1.8s forwards;
+  animation-delay: 1s;
+}
+.fade-in-up-3 {
+  opacity: 0;
+  transform: translateY(10px); /* Start slightly lower */
+  animation: fadeInUp 2s ease-out 1.8s forwards;
+  animation-delay: 1.5s;
+}
+
+@media (max-width: 600px) {
+  .navbar-border-group {
+    border: none;
+    box-shadow: none;
+  }
+}
